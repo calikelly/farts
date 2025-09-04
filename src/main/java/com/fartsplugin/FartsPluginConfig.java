@@ -8,26 +8,6 @@ import net.runelite.client.config.ConfigItem;
 public interface FartsPluginConfig extends Config
 {
 	@ConfigItem(
-		keyName = "greeting",
-		name = "Welcome Greeting",
-		description = "The message to show to the user when they login"
-	)
-	default String greeting()
-	{
-		return "Hello";
-	}
-
-	@ConfigItem(
-		keyName = "enableDeathFart",
-		name = "Death Fart",
-		description = "Play a fart sound when you die"
-	)
-	default boolean enableDeathFart()
-	{
-		return true;
-	}
-
-	@ConfigItem(
 		keyName = "enableChatFart",
 		name = "Chat Fart",
 		description = "Play a fart sound when someone says fart-related words"
@@ -64,7 +44,7 @@ public interface FartsPluginConfig extends Config
 	)
 	default int fartVolume()
 	{
-		return 50;
+		return 80;
 	}
 
 
